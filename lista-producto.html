@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de productos</title>
+  <link rel="stylesheet" href="">
+  
+    <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"/>
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+  rel="stylesheet"/>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Perfil" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lista-producto.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito-compra.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Descuento">Descuento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Suscripcion">Suscripcion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historial.html">Historial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#Seguimiento">Seguimiento</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Registro e inicio de sesión -->
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2" data-bs-toggle="modal" data-bs-target="#login">Iniciar sesion</button>
+        <a href="perfil.html"><button type="button" class="btn btn-primary me-3">Registrarse</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Buscador -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="input-group rounded p-3">
+          <input type="search" class="form-control rounded" placeholder="Buscar..." aria-label="Buscar" aria-describedby="search-addon"/>
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        
+        <!-- tabla de datos -->
+        <div class="container-flex">
+            <div class="row">
+                <div class="col-sm-12 table-responsive">
+                    <table class="table table caption-top table-responsive table-bordered">
+                      <caption>
+                        Lista de Productos
+                      </caption>
+                      <thead class="table-dark w-responsive">
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Codigo</th>
+                          <th scope="col">Nombre del producto</th>
+                          <th scope="col">Stock</th>
+                          <th scope="col">Precio</th>
+                          <th scope="col">Agregar</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Alejandro</td>
+                          <td>Cactus</td>
+                          <td>3</td>
+                          <td>$7500</td>
+                          <td><button type="button" class="btn btn-primary btn-floating">
+                            <i class="fas fa-download"></i>
+                          </button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Helecho</td>
+                          <td>5</td>
+                          <td>$16000</td>
+                          <td><button type="button" class="btn btn-primary btn-floating">
+                            <i class="fas fa-download"></i>
+                          </button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>David</td>
+                          <td>Tierra de hojas</td>
+                          <td>10</td>
+                          <td>$5000</td>
+                          <td><button type="button" class="btn btn-primary btn-floating">
+                            <i class="fas fa-download"></i>
+                          </button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>David</td>
+                            <td>Pala</td>
+                            <td>10</td>
+                            <td>$2000</td>
+                            <td><button type="button" class="btn btn-primary btn-floating">
+                                <i class="fas fa-download"></i>
+                              </button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>David</td>
+                            <td>Semilla Girasol</td>
+                            <td>10</td>
+                            <td>$500</td>
+                            <td><button type="button" class="btn btn-primary btn-floating">
+                                <i class="fas fa-download"></i>
+                              </button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>David</td>
+                            <td>Flor del Azafrán</td>
+                            <td>2</td>
+                            <td>$50000</td>
+                            <td><button type="button" class="btn btn-primary btn-floating">
+                                <i class="fas fa-download"></i>
+                              </button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>David</td>
+                            <td>Orquídea oro de kinabalu</td>
+                            <td>Sin Stock</td>
+                            <td>$50000</td>
+                            <td><button type="button" class="btn btn-primary btn-floating">
+                                <i class="fas fa-download"></i>
+                              </button></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+</body>
+</html>
